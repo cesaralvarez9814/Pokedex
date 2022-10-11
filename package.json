@@ -1,0 +1,19 @@
+{
+  "name": "katajavascriptavanzado",
+  "version": "1.0.0",
+  "description": "Proyecto Final JavaScript Avanzado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuelJuarezDev/KataJavaScriptAvanzado.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManuelJuarezDev/KataJavaScriptAvanzado/issues"
+  },
+  "homepage": "https://github.com/ManuelJuarezDev/KataJavaScriptAvanzado#readme"
+}

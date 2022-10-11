@@ -1,0 +1,127 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+h5{
+  color: rgb(129, 126, 126);
+}
+/* Colores types */
+.normal{
+  background-color:grey;
+}
+.fighting{
+  background-color:chocolate ;
+}
+.flying{
+  background-color: steelblue;
+}
+.poison{
+  background-color: mediumslateblue;
+}
+.ground{
+ background-color:peru;
+}
+.rock{
+  background-color: brown;
+}
+.bug{
+  background-color: green;
+}
+.ghost{
+  background-color: darkblue;
+}
+.steel{
+  background-color: cadetblue;
+}
+.fire{
+  background-color: tomato;
+}
+.water{
+  background-color: cornflowerblue;
+}
+.grass {
+  background-color: greenyellow;
+}
+.electric{
+  background-color: yellow;
+}
+.psychic{
+  background-color: violet;
+}
+.ice{
+  background-color:lightblue;
+}
+.dragon{
+  background-color:darkcyan;
+}
+.dark{
+  background-color:darkslategrey;
+}
+.fairy{
+  background-color: indianred;
+}
+.unknown{
+  background-color: black;
+}
+.shadow{
+  background-color: black;
+}
+.pokeball {
+  height:60px;
+  width:60px;
+  position: relative;
+  display: none;
+}
+.pokeball::before,
+.pokeball::after {
+  content: "";
+  position: absolute;
+  inset:0;
+  border-radius: 50%;
+  transform-origin: bottom;
+}
+.pokeball::after {
+  background:
+    radial-gradient(at 75% 15%,#fffb,#0000 35%),
+    radial-gradient(at 80% 40%,#0000,#0008),
+    radial-gradient(circle  5px,#fff 94%,#0000),
+    radial-gradient(circle 10px,#000 94%,#0000),
+    linear-gradient(#F93318 0 0) top   /100% calc(50% - 5px),
+    linear-gradient(#fff    0 0) bottom/100% calc(50% - 5px)
+    #000;
+  background-repeat: no-repeat;
+  animation: w10 1s infinite cubic-bezier(0.5,120,0.5,-120);
+}
+
+.pokeball::before {
+  background:#ddd;
+  filter: blur(8px);
+  transform: scaleY(0.4) translate(-13px, 0px);
+}
+
+@keyframes w10 { 
+ 30%,70% {transform:rotate(0deg)}
+ 49.99%  {transform:rotate(0.2deg)}
+ 50%     {transform:rotate(-0.2deg)}
+}
+
+.contenido{
+  margin-top: 5%;
+}
+
+.card {
+  z-index: 999;
+}
+#pokemones > .card:hover {
+
+  transition: transform 0.2s;
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px ; 
+  background-color: #aaaaaa1c;
+}
+
